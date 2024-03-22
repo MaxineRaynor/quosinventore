@@ -1,0 +1,64 @@
+{
+  "name": "quosinventore",
+  "version": "1.0.0",
+  "description": "Recursive camel casing and snake casing of object property names with proper typing",
+  "main": "./dist/index.js",
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch --verbose",
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MaxineRaynor/quosinventore.git"
+  },
+  "author": "ThaddeusRice",
+  "license": "MIT",
+  "keywords": [
+    "camel-case",
+    "consectetur",
+    "snakecase to camelcase transformer typescript",
+    "camelcase to snakecase transformer typescript",
+    "aut",
+    "transform",
+    "typescript"
+  ],
+  "devDependencies": {
+    "@types/jest": "^27.4.0",
+    "jest": "^27.4.7",
+    "ts-jest": "^27.1.3",
+    "typescript": "^4.5.5"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "./*"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "clearMocks": true
+  },
+  "bugs": {
+    "url": "https://github.com/MaxineRaynor/quosinventore.git/issues"
+  }
+}
